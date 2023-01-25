@@ -1,0 +1,134 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	gap: 8px;
+	padding: 12px 24px;
+
+	height: 48px;
+	width: fit-content;
+	width: -moz-fit-content;
+
+	font: var(--typography-button-label);
+	text-transform: uppercase;
+	text-align: center;
+
+	color: var(--color-black);
+	background-color: var(--color-white);
+
+	border: none;
+	border-radius: 24px;
+
+	position: relative;
+
+	transition: 0.3s;
+}
+
+.button.loading::before {
+	content: "";
+	background: url("../assets/icons/loading.svg") no-repeat center center/cover;
+	width: 16px;
+	height: 16px;
+	animation: rotateIcon 1s linear infinite;
+}
+
+.button.movable::before {
+	content: "";
+	background: url("../assets/icons/reorder-three.svg") no-repeat center
+		center/cover;
+	width: 24px;
+	height: 24px;
+}
+
+@keyframes rotateIcon {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+/* PRIMARY */
+.button.button-primary {
+	color: var(--color-white);
+	background-color: var(--color-lavender-600);
+}
+
+.button.button-primary:hover,
+.button.button-primary.hover {
+	cursor: pointer;
+	background-color: var(--color-lavender-500);
+}
+
+.button.button-primary:focus,
+.button.button-primary.focus {
+	border: 2px solid var(--color-purple-100);
+}
+
+.button.button-primary:disabled,
+.button.button-primary.disabled {
+	opacity: 56%;
+}
+
+/* SECONDARY */
+.button.button-secondary {
+	color: var(--color-white);
+	background-color: var(--color-purple-600);
+}
+
+.button.button-secondary:hover,
+.button.button-secondary.hover {
+	cursor: pointer;
+	background-color: var(--color-purple-500);
+}
+
+.button.button-secondary:focus,
+.button.button-secondary.focus {
+	border: 2px solid var(--color-purple-100);
+}
+
+.button.button-secondary:disabled,
+.button.button-secondary.disabled {
+	opacity: 56%;
+}
+
+/* TERTIARY */
+.button.button-tertiary {
+	color: var(--color-white);
+	background-color: transparent;
+}
+
+.button.button-tertiary:hover,
+.button.button-tertiary.hover {
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.button.button-tertiary:focus,
+.button.button-tertiary.focus {
+	background-color: transparent;
+	border: 2px solid var(--color-purple-100);
+}
+
+.button.button-tertiary:disabled,
+.button.button-tertiary.disabled {
+	opacity: 56%;
+}
+
+.button:hover {
+	cursor: url("../assets/cursors/png/pointer.png"), auto !important;
+}
+
+.button:disabled:hover,
+.button.disabled:hover {
+	cursor: url("../assets/cursors/png/not-allowed.png"), auto !important;
+}
+
+.button.button.loading:hover {
+	cursor: url("../assets/cursors/png/busybutclickable.png"), auto !important;
+}
+.button.movable:hover {
+	cursor: url("../assets/cursors/png/move.png"), auto !important;
+}

@@ -1,0 +1,142 @@
+body {
+	min-height: 100vh;
+	color: var(--color-white);
+	background-color: var(--background-primary-color);
+	margin-bottom: 107px;
+}
+main {
+	display: flex;
+	max-width: 272px;
+	margin: 0 auto;
+	justify-content: center;
+	flex-direction: column;
+	gap: 68px;
+}
+
+h1,
+h2 {
+	font: var(--typography-title);
+}
+
+p {
+	font: var(--typography-lead);
+	opacity: 0.67;
+}
+
+section {
+	min-height: 100%;
+}
+
+section .section-header {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 107px 0 68px;
+}
+
+.content-tipos {
+	display: flex;
+	overflow-x: auto;
+	border-radius: 8px;
+	background-color: var(--background-secondary-color);
+}
+
+.estados {
+	display: flex;
+	flex-direction: column;
+	padding: 96px 0 32px;
+	gap: 32px;
+}
+
+.estados div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: var(--typography-caption);
+	width: 94px;
+	height: 48px;
+	text-transform: uppercase;
+}
+
+.tipos {
+	display: flex;
+	gap: 32px;
+	padding: 0 32px;
+}
+
+.tipo {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	align-items: center;
+}
+
+.tipo > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: var(--typography-caption);
+	height: 64px;
+	text-transform: uppercase;
+}
+
+.tipo .cursor {
+	height: 48px;
+}
+
+.section-teste {
+	position: inherit;
+	padding: 0 32px;
+	width: 100%;
+	background-color: var(--color-purple-800);
+	padding-bottom: 68px;
+}
+
+.content-teste {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.content-teste .button {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	main {
+		max-width: 672px;
+	}
+}
+@media (min-width: 1280px) {
+	body {
+		margin-bottom: 0px;
+	}
+
+	main {
+		max-width: none;
+		flex-direction: row;
+		gap: 0;
+	}
+
+	section {
+		padding: 0 44px;
+	}
+
+	.section-tipos {
+		padding: 0 76px;
+		margin-right: var(--sidebar-width);
+	}
+
+	.content-tipos {
+		background-color: var(--background-primary-color);
+		box-shadow: inset 0 64px var(--background-secondary-color),
+			inset 96px 0 var(--background-secondary-color),
+			inset -6px -7px var(--background-secondary-color);
+	}
+
+	.section-teste {
+		position: fixed;
+		right: 0;
+		width: var(--sidebar-width);
+	}
+}

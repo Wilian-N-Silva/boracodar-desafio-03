@@ -1,14 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Desafio 0X - #boraCodar</title>
 
+		<title>Desafio 03 - #boraCodar</title>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style/main.css" />
 	</head>
 	<body>
-		<script src="script/main.js"></script>
+		<main>
+			<section class="section-tipos">
+				<div class="section-header">
+					<h1>Tipos de botão</h1>
+					<p>
+						Dentro de um layout, botões servem para destacar ações importantes a
+						serem tomadas.<br />Acompanhe abaixo um exemplo de tipos e
+						propriedades.
+					</p>
+				</div>
+				<div class="content-tipos">
+					<div class="estados">
+						<div>default</div>
+						<div>hover</div>
+						<div>focus</div>
+						<div>disabled</div>
+						<div>loading</div>
+						<div>movable</div>
+					</div>
+					<div class="tipos">
+						<div class="tipo">
+							<div>Botão Primário</div>
+							<button class="button button-primary" type="button">
+								DEFAULT PRIMARY
+							</button>
+							<button class="button button-primary hover" type="button">
+								HOVER PRIMARY
+							</button>
+							<button class="button button-primary focus" type="button">
+								FOCUS PRIMARY
+							</button>
+							<button class="button button-primary disabled" type="button">
+								DISABLED PRIMARY
+							</button>
+							<button class="button button-primary loading" type="button">
+								LOADING PRIMARY
+							</button>
+							<button class="button button-primary movable" type="button">
+								MOVABLE PRIMARY
+							</button>
+						</div>
+						<div class="tipo">
+							<div>Botão secundário</div>
+							<button class="button button-secondary" type="button">
+								DEFAULT SECONDARY
+							</button>
+							<button class="button button-secondary hover" type="button">
+								HOVER SECONDARY
+							</button>
+							<button class="button button-secondary focus" type="button">
+								FOCUS SECONDARY
+							</button>
+							<button class="button button-secondary disabled" type="button">
+								DISABLED SECONDARY
+							</button>
+							<button class="button button-secondary loading" type="button">
+								LOADING SECONDARY
+							</button>
+							<button class="button button-secondary movable" type="button">
+								MOVABLE SECONDARY
+							</button>
+						</div>
+						<div class="tipo">
+							<div>Botão terciário</div>
+							<button class="button button-tertiary" type="button">
+								DEFAULT TERTIARY
+							</button>
+							<button class="button button-tertiary hover" type="button">
+								HOVER TERTIARY
+							</button>
+							<button class="button button-tertiary focus" type="button">
+								FOCUS TERTIARY
+							</button>
+							<button class="button button-tertiary disabled" type="button">
+								DISABLED TERTIARY
+							</button>
+							<button class="button button-tertiary loading" type="button">
+								LOADING TERTIARY
+							</button>
+							<button class="button button-tertiary movable" type="button">
+								MOVABLE TERTIARY
+							</button>
+						</div>
+						<div class="tipo">
+							<div>Cursor</div>
+							<div class="cursor">
+								<img src="./assets/cursors/png/pointer.png" alt="" />
+							</div>
+							<div class="cursor">
+								<img src="./assets/cursors/png/pointer.png" alt="" />
+							</div>
+							<div class="cursor">
+								<img src="./assets/cursors/png/pointer.png" alt="" />
+							</div>
+							<div class="cursor">
+								<img src="./assets/cursors/png/not-allowed.png" alt="" />
+							</div>
+							<div class="cursor">
+								<img src="./assets/cursors/png/busybutclickable.png" alt="" />
+							</div>
+							<div class="cursor">
+								<img src="./assets/cursors/png/move.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-teste">
+				<div class="section-header">
+					<h1>Teste os botões</h1>
+					<p>
+						Interaja com os botões e observe a mudança de aparência e de
+						cursores
+					</p>
+				</div>
+				<div class="content-teste">
+					<button class="button button-primary" type="button">
+						INTERAJA COMIGO
+					</button>
+					<button class="button button-secondary" type="button" disabled>
+						INTERAJA COMIGO
+					</button>
+					<button class="button button-tertiary movable" type="button">
+						INTERAJA COMIGO
+					</button>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
