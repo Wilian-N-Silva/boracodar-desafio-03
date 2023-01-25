@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="A tela demonstrando o layout" src=".github.com/preview.jpg" width="100%">
+  <img alt="A tela demonstrando o layout" src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
