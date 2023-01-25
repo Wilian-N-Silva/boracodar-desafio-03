@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="Um card de produto" src=".github/preview.jpg" width="100%">
+  <img alt="Um card de produto" src="./.github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
